@@ -8,12 +8,11 @@ type TodoListPropsType = {
 }
 
 
-
 function TodoList(props: TodoListPropsType) {
     let dynamicTask = props.tasks.map(t => <li>
         <input type="checkbox" checked={t.isDone}/>
         <span>{t.title}</span>
-        <button onClick={()=>alert('Hi')}>x</button>
+        <button onClick={() => alert('Hi')}>x</button>
     </li>)
 
 
